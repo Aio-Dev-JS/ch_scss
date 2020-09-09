@@ -1,5 +1,8 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
+html {
+  background-color: white;
+}
 body {
   background-color: #dde1d4;
   padding: 15px;
@@ -9,4 +12,88 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+body > div {
+  margin: 10px;
+}
+
+body > div > div {
+  padding: 5px;
+}
+
+h1 {
+  font-size: 170px;
+  font-weight: 700;
+}
+
+.top {
+  height: 8vh;
+  background-color: black;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 10px;
+}
+
+.top div:nth-child(1) {
+  width: 25%;
+}
+.top div:nth-child(2) {
+  width: 45%;
+}
+.top div:nth-child(3) {
+  width: 30%;
+}
+
+span {
+  font-size: 15px;
+  color: #e6dfca;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.middle {
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle > div {
+  background-color: RGB(241, 65, 18);
+}
+.middle > div:first-child {
+  width: 70%;
+  margin-right: 2vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+.middle > div:last-child {
+  width: 30%;
+}
+
+.bottom {
+  height: 25vh;
+  background-color: RGB(241, 65, 18);
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom div:nth-child(1) {
+}
+
+.bottom div:nth-child(2),
+.bottom div:nth-child(3) {
+  color: #e6dfca;
+  font-size: 35px;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+.bottom h1 {
+  position: relative;
+  top: -20px;
 }
